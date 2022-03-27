@@ -8,7 +8,8 @@ const config = {
     extend: {
       colors: {
         ...colors,
-        'neutral': colors.slate
+        'neutral': colors.zinc,
+        'primary': colors.sky
       }
     },
   },

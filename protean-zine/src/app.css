@@ -5,7 +5,12 @@
 @import "@fontsource/ibm-plex-serif";
 
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+.text-default {
+  @apply text-neutral-600 dark:text-neutral-300;
+}
+.text-focus {
+  @apply text-neutral-900 dark:text-neutral-50;
+}

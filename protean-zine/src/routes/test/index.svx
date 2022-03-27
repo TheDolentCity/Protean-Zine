@@ -1,12 +1,13 @@
 ---
-title: My lovely article
+title: Quickstart
 author: Dante Nardo
-date: 04/10/1997
+date: Mar 26
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
 ---
 
 <script>
-	import Poster from '$lib/components/poster.svelte';
-
 	let number = 45;
 </script>
 

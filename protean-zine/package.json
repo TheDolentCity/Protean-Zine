@@ -1,6 +1,7 @@
 {
   "name": "protean-zine",
   "version": "0.0.1",
+  "repository": "https://github.com/TheDolentCity/Protean-Zine",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -19,6 +20,7 @@
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "autoprefixer": "^10.4.2",
+    "carbon-icons-svelte": "^10.45.1",
     "eslint": "^7.32.0",
     "eslint-plugin-svelte3": "^3.2.1",
     "mdsvex": "^0.10.5",
@@ -37,6 +39,8 @@
     "@fontsource/ibm-plex-sans": "^4.5.7",
     "@fontsource/ibm-plex-serif": "^4.5.6",
     "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1"
+    "cookie": "^0.4.1",
+    "estimated-read-time": "^1.2.0",
+    "remark-github": "^11.2.2"
   }
 }

@@ -1,4 +1,5 @@
 import { defineMDSveXConfig as defineConfig } from "mdsvex";
+import github from "remark-github";
 
 const config = defineConfig({
   extensions: [".svelte.md", ".md", ".svx"],
@@ -9,7 +10,7 @@ const config = defineConfig({
   smartypants: {
     dashes: "oldschool",
   },
-  remarkPlugins: [],
+  remarkPlugins: [github],
   rehypePlugins: [],
 });
 
