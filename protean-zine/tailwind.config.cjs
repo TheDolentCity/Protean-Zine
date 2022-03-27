@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors');
 const typography = require("@tailwindcss/typography");
 
 const config = {
@@ -5,7 +6,10 @@ const config = {
   darkMode: "media",
   theme: {
     extend: {
-      
+      colors: {
+        ...colors,
+        'neutral': colors.slate
+      }
     },
   },
   fontFamily: {

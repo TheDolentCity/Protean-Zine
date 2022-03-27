@@ -2,18 +2,13 @@ import { defineMDSveXConfig as defineConfig } from "mdsvex";
 
 const config = defineConfig({
   extensions: [".svelte.md", ".md", ".svx"],
-
   layout: {
-    light: "./src/protean-layouts/light.svelte",
-    dark: "./src/protean-layouts/dark.svelte",
-    paper: "./src/protean-layouts/paper.svelte",
-    _: "./src/protean-layouts/light.svelte",
+    paper: "./src/lib/protean-layouts/paper/paper-layout.svelte",
+    _: "./src/lib/protean-layouts/default/default-layout.svelte",
   },
-
   smartypants: {
     dashes: "oldschool",
   },
-
   remarkPlugins: [],
   rehypePlugins: [],
 });
