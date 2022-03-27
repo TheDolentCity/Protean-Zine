@@ -1,7 +1,7 @@
-<script lang="ts">
+<script context="module" lang="ts">
   import "../app.css";
 </script>
 
-<main>
+<main class="text-default">
   <slot />
 </main>

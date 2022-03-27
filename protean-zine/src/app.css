@@ -14,3 +14,6 @@
 .text-focus {
   @apply text-neutral-900 dark:text-neutral-50;
 }
+.mst {
+  @apply motion-safe:transition motion-safe:duration-200 motion-safe:ease-in-out;
+}

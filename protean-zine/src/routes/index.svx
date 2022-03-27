@@ -1,0 +1,14 @@
+---
+title: Protean Zine
+author: Dante Nardo
+date: Mar 27
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
+---
+
+<script>
+    
+</script>
+
+A static site template that enhances your Markdown with widgets to provide a dynamic PDF-like experience online.
