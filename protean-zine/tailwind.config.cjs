@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors');
 const typography = require("@tailwindcss/typography");
 
 const config = {
-  content: ["./src/**/*.{html,js,svelte,ts}"],
+  content: ["./src/**/*.{html,js,svelte,ts,svx}"],
   darkMode: "media",
   theme: {
     extend: {

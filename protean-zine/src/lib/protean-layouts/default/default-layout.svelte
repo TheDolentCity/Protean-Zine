@@ -12,7 +12,8 @@
 	export let twitter: string;
 	export let website: string;
 
-  const modules = import.meta.glob('../../../routes/**.{svelte,svx}');
+  const modules = import.meta.glob('../../../routes/**/*.{svelte,svx}');
+	console.log(modules);
   let routes: Array<IRoute> = getAllRoutes(modules);
 
   console.log(routes);
@@ -33,7 +34,9 @@
 	
 			<Header author={author} date={date} github={github} twitter={twitter} website={website} />
 			
-			<h1>{ title }</h1>
+			{#if title}
+				<h1>{title}</h1>
+			{/if}
 			
 			<slot>
 				<!-- the mdsvex content will be slotted in here -->

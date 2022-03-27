@@ -6,7 +6,12 @@
 </script>
 
 {#if routes}
-  <div class="flex flex-col w-40 p-4">
+  <div class="flex flex-col w-40">
+    <NavigationLink route={{
+      title: "Home",
+      link: "/",
+      subroutes: null
+    }} />
     {#each routes as route}
       <NavigationLink route={route} />
     {/each}
