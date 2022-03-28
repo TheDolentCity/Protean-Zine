@@ -1,7 +1,8 @@
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
-import adapter from "@sveltejs/adapter-auto";
+import adapter from '@sveltejs/adapter-netlify';
 import preprocess from "svelte-preprocess";
+// import typescript from '@rollup/plugin-typescript';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,17 +13,17 @@ const config = {
   preprocess: [
     preprocess({
       postcss: true,
+      typescript: true
     }),
     mdsvex(mdsvexConfig),
   ],
 
   kit: {
-    adapter: adapter(),
-
-    // Override http methods in the Todo forms
-    methodOverride: {
-      allowed: ["PATCH", "DELETE"],
-    },
+    adapter: adapter({
+			// if true, will split your app into multiple functions
+			// instead of creating a single one for the entire app
+			split: false
+		})
   },
 };
 

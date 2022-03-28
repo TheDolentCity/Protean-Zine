@@ -10,7 +10,7 @@
     <NavigationLink route={{
       title: "Home",
       link: "/",
-      subroutes: null
+      subroutes: []
     }} />
     {#each routes as route}
       <NavigationLink route={route} />

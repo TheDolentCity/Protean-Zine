@@ -39,7 +39,7 @@ export function getAllRoutes(modules: Record<string, () => Promise<{ [key: strin
     routes.push({
       title: title,
       link: link,
-      subroutes: null
+      subroutes: []
     });
   }
 
