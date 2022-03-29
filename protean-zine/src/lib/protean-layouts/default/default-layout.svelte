@@ -1,20 +1,19 @@
-<script lang="ts">
-  import type { IRoute } from "$lib/interfaces/route-finder";
-  import { getAllRoutes } from "$lib/interfaces/route-finder";
+<script>
+	import { getAllRoutes } from '$lib/interfaces/route-finder';
 	import Header from "$lib/components/header.svelte";
   import Navigation from "$lib/components/navigation.svelte";
 
-	export let title: string;
-	export let author: string;
-	export let date: string;
+	export let title;
+	export let author;
+	export let date;
 	
-	export let github: string;
-	export let twitter: string;
-	export let website: string;
+	export let github;
+	export let twitter;
+	export let website;
 
   const modules = import.meta.glob('../../../routes/**/*.{svelte,svx}');
 	console.log(modules);
-  let routes: Array<IRoute> = getAllRoutes(modules);
+  let routes = getAllRoutes(modules);
 
   console.log(routes);
 </script>

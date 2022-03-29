@@ -1,11 +1,5 @@
-export interface IRoute {
-  title: string;
-  link: string;
-  subroutes: Array<IRoute>;
-}
-
-export function getAllRoutes(modules: Record<string, () => Promise<{ [key: string]: any; }>>): IRoute[] {
-  let routes: Array<IRoute> = [];
+export function getAllRoutes(modules) {
+  let routes = [];
 
   for (let route in modules) {
     console.log(route);
