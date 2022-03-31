@@ -22,7 +22,7 @@
   <Navigation routes={routes} />
 
 	<div class="aspect-[1/1.4142] overflow-y-auto">
-		<article id="zine" class="prose prose-neutral dark:prose-invert
+		<article id="zine" class="prose prose-neutral dark:prose-invert font-sans
 			prose-h1:font-semibold prose-h1:text-[4.25rem] prose-h1:leading-[5.75rem] prose-h1:text-focus
 			prose-h2:font-semibold prose-h2:text-[2.5rem]  prose-h2:leading-[3.25rem] prose-h2:text-focus
 			prose-h3:font-semibold prose-h3:text-[1.75rem] prose-h3:leading-[2.25rem] prose-h3:text-focus

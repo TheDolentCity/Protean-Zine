@@ -5,18 +5,18 @@ const config = {
   content: ["./src/**/*.{html,js,svelte,ts,svx}"],
   darkMode: "media",
   theme: {
+    fontFamily: {
+      mono: ['IBM Plex Mono', 'monospace'],
+      sans: ['IBM Plex Sans', 'sans-serif'],
+      serif: ['IBM Plex Serif', 'serif'],
+    },
     extend: {
       colors: {
         ...colors,
         'neutral': colors.zinc,
-        'primary': colors.sky
+        'primary': colors.blue
       }
     },
-  },
-  fontFamily: {
-    mono: ['IBM Plex Mono', 'monospace'],
-    sans: ['IBM Plex Sans', 'sans-serif'],
-    serif: ['IBM Plex Serif', 'serif'],
   },
   plugins: [typography],
 };
