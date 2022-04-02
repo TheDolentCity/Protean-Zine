@@ -4,7 +4,6 @@ export function getAllRoutes(modules) {
   let routes = [];
 
   for (let route in modules) {
-    console.log(route);
     // Remove file extensions
     let cleanRoute = route.replace(".svelte", "").replace(".svx", "").replace("./", "/");
     

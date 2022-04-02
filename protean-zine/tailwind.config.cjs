@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors');
 const typography = require("@tailwindcss/typography");
+const scrollbar = require("tailwind-scrollbar");
 
 const config = {
   content: ["./src/**/*.{html,js,svelte,ts,svx}"],
@@ -17,7 +18,10 @@ const config = {
       }
     },
   },
-  plugins: [typography],
+  plugins: [
+    typography,
+    scrollbar
+  ],
 };
 
 module.exports = config;

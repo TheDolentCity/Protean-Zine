@@ -21,6 +21,12 @@
   .btn-secondary {
     @apply bg-primary-600 text-core-50;
   }
+  .chip {
+    @apply p-1 rounded text-xs font-mono font-semibold text-focus bg-core-200 dark:bg-core-800;
+  }
+  .focus-link {
+    @apply font-medium text-primary-600 dark:text-primary-400 hover:underline hover:text-core-900 hover:decoration-core-900 dark:hover:text-core-100 dark:hover:decoration-core-100;
+  }
 }
 
 @layer utilities {
