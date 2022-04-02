@@ -13,13 +13,13 @@ website: https://svelte.dev/
 <div class="not-prose flex flex-col h-[400px] justify-center text-center">
   <div class="flex flex-col">
     <h1 class="font-semibold text-[2.5rem] leading-none text-focus mb-4">Protean Zine</h1>
-    <h2 class="text-[1.5rem] leading-none text-focus">Rich Markdown Sites for RPGs</h2>
+    <h2 class="font-light text-[1.5rem] leading-none text-focus">Rich Markdown Sites for RPGs</h2>
   </div>
   <div class="flex mt-8 space-x-4 justify-center">
-    <a href="/documentation/getting-started" class="px-6 py-2 rounded bg-neutral-900 dark:bg-neutral-50 text-neutral-50 dark:text-neutral-900">
+    <a href="/documentation/getting-started" class="px-6 py-2 rounded bg-core-900 dark:bg-core-50 text-core-50 dark:text-core-900">
       Getting Started
     </a>
-    <a href="/learn-more" class="px-6 py-2 rounded bg-primary-600 text-neutral-50">
+    <a href="/learn-more" class="px-6 py-2 rounded bg-primary-600 text-core-50">
       Learn More
     </a>
   </div>

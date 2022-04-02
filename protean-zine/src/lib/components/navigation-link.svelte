@@ -1,9 +1,17 @@
-<script lang="ts">
-  import type { IRoute } from "$lib/interfaces/route-finder";
+<script>
+	import { CssBuilder } from './../builders/cssBuilder.js';
+  import { page } from '$app/stores';
 
-  export let route: IRoute;
+  export let route;
+
+  $: css = () => {
+		return new CssBuilder()
+			.addClass('p-2 rounded leading-none whitespace-nowrap hover:raise-5')
+			.addClass('underline decoration-2 decoration-primary-400 underline-offset-1', route?.link === $page?.url?.pathname)
+			.build();
+	};
 </script>
 
-<a href={route.link} class="py-1 rounded hover:underline hover:decoration-2 hover:decoration-primary-400 hover:underline-offset-1">
+<a href={route.link} class={css()}>
   {route.title}
 </a>

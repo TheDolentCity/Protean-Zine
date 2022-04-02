@@ -8,12 +8,29 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-default {
-  @apply text-neutral-600 dark:text-neutral-300;
-}
-.text-focus {
-  @apply text-neutral-900 dark:text-neutral-50;
-}
-.mst {
-  @apply motion-safe:transition motion-safe:duration-200 motion-safe:ease-in-out;
+@layer utilities {
+  .text-default {
+    @apply text-core-600 dark:text-core-300;
+  }
+  .text-focus {
+    @apply text-core-900 dark:text-core-50;
+  }
+  .raise-5 {
+    @apply bg-core-900 bg-opacity-5 dark:bg-core-50 dark:bg-opacity-5; 
+  }
+  .raise-10 {
+    @apply bg-core-900 bg-opacity-10 dark:bg-core-50 dark:bg-opacity-10; 
+  }
+  .raise-15 {
+    @apply bg-core-900 bg-opacity-15 dark:bg-core-50 dark:bg-opacity-15; 
+  }
+  .raise-20 {
+    @apply bg-core-900 bg-opacity-20 dark:bg-core-50 dark:bg-opacity-20; 
+  }
+  .raise-25 {
+    @apply bg-core-900 bg-opacity-25 dark:bg-core-50 dark:bg-opacity-25; 
+  }
+  .mst {
+    @apply motion-safe:transition motion-safe:duration-200 motion-safe:ease-in-out;
+  }
 }

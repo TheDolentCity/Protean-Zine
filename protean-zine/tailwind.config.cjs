@@ -13,7 +13,7 @@ const config = {
     extend: {
       colors: {
         ...colors,
-        'neutral': colors.zinc,
+        'core': colors.zinc,
         'primary': colors.blue
       }
     },

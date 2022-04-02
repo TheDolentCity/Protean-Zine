@@ -9,7 +9,7 @@
 	export let date;
 </script>
 
-<div class="flex w-full h-full p-8 justify-center items-center bg-neutral-100 dark:bg-neutral-900">
+<div class="flex w-full h-full p-8 justify-center items-center bg-core-100 dark:bg-core-900">
 	<article class="prose prose-neutral dark:prose-invert prose-a:decoration-sky-400 prose-a:underline-offset-1 hover:prose-a:decoration-2">
 		<h1>{ title }</h1>
 

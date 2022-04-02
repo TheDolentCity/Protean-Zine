@@ -26,7 +26,7 @@
 <div class="flex w-full space-x-12 mb-12 justify-between items-center shadow font-mono">
   <div class="flex flex-col space-y-2">
     <!-- Author -->
-    <div class="leading-none font-semibold text-neutral-900 dark:text-neutral-50">{author}</div>
+    <div class="leading-none font-semibold text-core-900 dark:text-core-50">{author}</div>
     <!-- Date and Reading Time -->
     <div class="leading-none">{date}{minutesToRead ? ` · ${minutesToRead} min read` : ""}</div>
   </div>

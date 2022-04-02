@@ -1,3 +1,5 @@
+import { toTitleCase } from '$lib/interfaces/prettify-string';
+
 export function getAllRoutes(modules) {
   let routes = [];
 
@@ -8,15 +10,16 @@ export function getAllRoutes(modules) {
     
     // Create pretty title for UI
     let title = cleanRoute.substring(cleanRoute.lastIndexOf('/') + 1);
+    title = title.replace('-', ' ');
+    title = toTitleCase(title);
     
     // Ignore site index and special layout components in routes folder
     if (title.startsWith("__")) {
       continue;
     }
-    if (title === "index") {
+    if (title === "Index") {
       continue;
     }
-    
 
     // Create correct navigatable link
     let link = cleanRoute.includes("index") ? cleanRoute.replace("index", "") : cleanRoute;

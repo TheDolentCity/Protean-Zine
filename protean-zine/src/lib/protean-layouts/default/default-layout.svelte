@@ -18,10 +18,10 @@
   console.log(routes);
 </script>
 
-<div class="flex w-screen h-screen p-8 space-x-16 justify-between bg-neutral-100 dark:bg-neutral-900">
-  <Navigation routes={routes} />
+<div class="flex w-screen h-screen space-x-16 justify-between bg-core-100 dark:bg-core-900">
+  <Navigation routes={routes} className="pt-8 pl-8" />
 
-	<div class="aspect-[1/1.4142] overflow-y-auto">
+	<div class="aspect-[1/1.4142] pt-8 pr-8 overflow-y-auto">
 		<article id="zine" class="prose prose-neutral dark:prose-invert font-sans
 			prose-h1:font-semibold prose-h1:text-[4.25rem] prose-h1:leading-[5.75rem] prose-h1:text-focus
 			prose-h2:font-semibold prose-h2:text-[2.5rem]  prose-h2:leading-[3.25rem] prose-h2:text-focus

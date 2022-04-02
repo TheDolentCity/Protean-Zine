@@ -1,12 +1,20 @@
-<script lang="ts">
-  import type { IRoute } from "$lib/interfaces/route-finder";
+<script>
+	import { CssBuilder } from '$lib/builders/cssBuilder.js';
   import NavigationLink from "$lib/components/navigation-link.svelte";
 
-  export let routes: Array<IRoute>;
+  export let routes;
+  export let className;
+
+  $: css = () => {
+		return new CssBuilder()
+			.addClass('flex flex-col w-40 space-y-1')
+			.addClass(className)
+			.build();
+	};
 </script>
 
 {#if routes}
-  <div class="flex flex-col w-40">
+  <div class={css()}>
     <NavigationLink route={{
       title: "Home",
       link: "/",
