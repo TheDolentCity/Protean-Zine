@@ -10,7 +10,7 @@ export function getAllRoutes(modules) {
     
     // Create pretty title for UI
     let title = cleanRoute.substring(cleanRoute.lastIndexOf('/') + 1);
-    title = title.replace('-', ' ');
+    title = title.replace(/-/g, ' ');
     title = toTitleCase(title);
     
     // Ignore site index and special layout components in routes folder

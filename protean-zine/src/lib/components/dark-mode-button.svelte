@@ -1,17 +1,20 @@
 <script>
-  let darkMode = window.localStorage.getItem('darkMode');
-
-  function updateDarkMode(mode) {
-    window.localStorage.setItem('darkMode', mode);
-  }
+  import { darkMode } from "$lib/stores/dark-mode-store";
+  import { Theme } from "$lib/enums/theme";
+  import Moon24 from "carbon-icons-svelte/lib/Moon24";
+  import Sun24 from "carbon-icons-svelte/lib/Sun24";
 </script>
 
-<button class="">
-  {#if darkMode}
-     <!-- content here -->
-  {:else if otherCondition}
-     <!-- else if content here -->
-  {:else}
-     <!-- else content here -->
-  {/if}
-</button>
+{#if $darkMode && $darkMode === Theme.Dark.name}
+  <button on:click={() => $darkMode = Theme.Light.name} class="mst">
+    <Moon24 />
+  </button>
+{:else if $darkMode && $darkMode === Theme.Light.name}
+  <button on:click={() => $darkMode = Theme.Dark.name} class="mst">
+    <Sun24 />
+  </button>
+{:else}
+  <button on:click={() => $darkMode = Theme.Light.name} class="mst">
+    <Moon24 />
+  </button>
+{/if}

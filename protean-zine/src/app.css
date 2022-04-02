@@ -8,6 +8,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn {
+    @apply px-3 py-1.5 rounded mst;
+  }
+  .btn-large {
+    @apply px-6 py-2 rounded mst;
+  }
+  .btn-primary {
+    @apply bg-core-900 dark:bg-core-50 text-focus-invert;
+  }
+  .btn-secondary {
+    @apply bg-primary-600 text-core-50;
+  }
+}
+
 @layer utilities {
   .text-default {
     @apply text-core-600 dark:text-core-300;
@@ -15,8 +30,11 @@
   .text-focus {
     @apply text-core-900 dark:text-core-50;
   }
+  .text-focus-invert {
+    @apply text-core-50 dark:text-core-900;
+  }
   .raise-5 {
-    @apply bg-core-900 bg-opacity-5 dark:bg-core-50 dark:bg-opacity-5; 
+    @apply bg-core-900 bg-opacity-5 dark:bg-core-50 dark:bg-opacity-5;
   }
   .raise-10 {
     @apply bg-core-900 bg-opacity-10 dark:bg-core-50 dark:bg-opacity-10; 

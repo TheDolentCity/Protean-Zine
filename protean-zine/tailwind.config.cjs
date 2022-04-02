@@ -3,7 +3,7 @@ const typography = require("@tailwindcss/typography");
 
 const config = {
   content: ["./src/**/*.{html,js,svelte,ts,svx}"],
-  darkMode: "media",
+  darkMode: "class",
   theme: {
     fontFamily: {
       mono: ['IBM Plex Mono', 'monospace'],
@@ -12,7 +12,6 @@ const config = {
     },
     extend: {
       colors: {
-        ...colors,
         'core': colors.zinc,
         'primary': colors.blue
       }

@@ -7,7 +7,7 @@
 
   $: css = () => {
 		return new CssBuilder()
-			.addClass('flex flex-col w-40 space-y-1')
+			.addClass('flex flex-col space-y-1')
 			.addClass(className)
 			.build();
 	};
