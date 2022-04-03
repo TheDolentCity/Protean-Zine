@@ -27,7 +27,7 @@ website: https://svelte.dev/
     </a>
   </div>
   <hr class="my-24 border-core-900 dark:border-core-100 opacity-25" />
-  <div class="grid grid-cols-2 lg:grid-cols-3 gap-12">
+  <div class="grid grid-cols-2 gap-12">
     <div class="flex flex-col text-left">
       <h3 class="text-lg font-semibold">Rich Markdown</h3>
       <p>Zines are Markdown + Components. You can import elements like a reading time calculator (<span class="chip"><ReadingTime /></span>) in Markdown files like this one to provide dynamic information.</p>
@@ -44,6 +44,11 @@ website: https://svelte.dev/
       <a href="/content/beginners" class="focus-link mt-1">Setup for beginners ⟶</a>
     </div>
     <div class="flex flex-col text-left">
+      <h3 class="text-lg font-semibold">Dev Friendly</h3>
+      <p>The Protean Zine framework is open-source and built on top of popular technologies like SvelteKit and TailwindCss. Deploy the site almost anywhere with SvelteKit adapters.</p>
+      <a href="/content/extending-zines" class="focus-link mt-1">Take me to the docs ⟶</a>
+    </div>
+    <div class="flex flex-col text-left">
       <h3 class="text-lg font-semibold">Customizable</h3>
       <p>Zines support light mode, dark mode, and paper modes by default. You can create your own layout and apply its styling to all of your zines.</p>
       <a href="/content/customization" class="focus-link mt-1">Customize your zines ⟶</a>
@@ -52,11 +57,6 @@ website: https://svelte.dev/
       <h3 class="text-lg font-semibold">Extensible</h3>
       <p>Zines can utilize frontmatter just like most blogging frameworks. Developers can even utilize remark and rehype plugins to extend their Markdown.</p>
       <a href="/content/extending-zines" class="focus-link mt-1">Extend your zines ⟶</a>
-    </div>
-    <div class="flex flex-col text-left">
-      <h3 class="text-lg font-semibold">Dev Friendly</h3>
-      <p>The Protean Zine framework is open-source and built on top of popular technologies like SvelteKit and TailwindCss. Deploy the site almost anywhere with SvelteKit adapters.</p>
-      <a href="/content/extending-zines" class="focus-link mt-1">Take me to the docs ⟶</a>
     </div>
   </div>
 </div>

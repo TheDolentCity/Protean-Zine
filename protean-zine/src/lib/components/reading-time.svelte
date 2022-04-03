@@ -14,4 +14,6 @@
   });
 </script>
 
-<span class="mst">{minutesToRead} min read</span>
+{#if minutesToRead}
+  <span class="">{minutesToRead} min read</span>
+{/if}

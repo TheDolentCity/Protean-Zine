@@ -5,7 +5,7 @@ export function getAllRoutes(modules) {
 
   for (let route in modules) {
     // Remove file extensions
-    let cleanRoute = route.replace(".svelte", "").replace(".svx", "").replace("./", "/");
+    let cleanRoute = route.replace(".svelte", "").replace(".zine", "").replace("./", "/");
     
     // Create pretty title for UI
     let title = cleanRoute.substring(cleanRoute.lastIndexOf('/') + 1);

@@ -3,7 +3,7 @@ const typography = require("@tailwindcss/typography");
 const scrollbar = require("tailwind-scrollbar");
 
 const config = {
-  content: ["./src/**/*.{html,js,svelte,ts,svx}"],
+  content: ["./src/**/*.{html,js,svelte,ts,zine}"],
   darkMode: "class",
   theme: {
     fontFamily: {

@@ -1,10 +1,9 @@
 <script>
   import { darkMode } from "$lib/stores/dark-mode-store";
-	import { getAllRoutes } from '$lib/interfaces/route-finder';
 	import { Theme } from "$lib/enums/theme";
 	import Header from "$lib/components/header.svelte";
-  import Navigation from "$lib/components/navigation.svelte";
 	import DarkModeButton from '$lib/components/dark-mode-button.svelte';
+	import Navigation from "$lib/components/navigation.svelte";
 
 	export let title;
 	export let author;
@@ -13,22 +12,20 @@
 	export let github;
 	export let twitter;
 	export let website;
-
-	// Load routes
-  const modules = import.meta.glob('../../../routes/**/*.{svelte,svx}');
-  let routes = getAllRoutes(modules);
 </script>
 
 <div class={$darkMode === Theme.Dark.name ? 'dark' : $darkMode === Theme.Light.name ? '' : 'dark'}>
-	<div class="flex w-screen h-screen space-x-16 justify-between text-default bg-core-100 dark:bg-core-900 mst">
+	<div class="flex w-screen h-screen max-w-screen max-h-screen space-x-16 justify-center text-default bg-core-100 dark:bg-core-900 mst">
 		<div class="pt-8 pl-4">
 			<div class="mb-2 pl-2">
 				<DarkModeButton />
 			</div>
-			<Navigation routes={routes} />
+			<div class="flex flex-col min-w-[10rem] space-y-1">
+				<Navigation />
+			</div>
 		</div>
 	
-		<div class="aspect-[1/1.4142] pt-8 pr-4 overflow-y-auto scrollbar scrollbar-thumb-core-400 scrollbar-track-core-200 dark:scrollbar-thumb-core-600 dark:scrollbar-track-core-800 mst">
+		<div class="aspect-[1/1.4142] pt-8 pr-4 pb-12 overflow-y-auto scrollbar scrollbar-thumb-core-400 hover:scrollbar-thumb-core-500 scrollbar-track-core-200 dark:scrollbar-thumb-core-600 dark:hover:scrollbar-thumb-core-500 dark:scrollbar-track-core-800 mst">
 			<article id="zine" class="prose prose-neutral dark:prose-invert font-sans mst
 				prose-h1:font-semibold prose-h1:text-[4.25rem] prose-h1:leading-[5.75rem] prose-h1:text-focus
 				prose-h2:font-semibold prose-h2:text-[2.5rem]  prose-h2:leading-[3.25rem] prose-h2:text-focus
@@ -36,7 +33,9 @@
 				prose-h4:font-semibold prose-h4:text-[1.25rem] prose-h4:leading-[1.75rem] prose-h4:text-focus
 				prose-h5:text-[1.125rem] prose-h5:leading-[1.5rem] prose-h5:text-focus
 				prose-h6:font-semibold prose-h6:text-[1rem] prose-h6:leading-[1.5rem] prose-h6:text-focus
-				prose-a:decoration-primary-600 prose-a:underline-offset-1 hover:prose-a:decoration-2">
+				prose-a:decoration-primary-600 prose-a:underline-offset-1 hover:prose-a:decoration-2
+				prose-code:not-prose
+				prose-pre:not-prose">
 		
 				<Header author={author} date={date} github={github} twitter={twitter} website={website} />
 				

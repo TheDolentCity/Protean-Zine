@@ -1,0 +1,38 @@
+---
+title: Reading Time
+author: Dante Nardo
+date: Apr 2nd
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
+---
+
+<script>
+  import "$lib/../styles/prism-code-theme.css";
+  import ReadingTime from '$lib/components/reading-time.svelte';
+</script>
+
+This component renders the number of minutes to read the current page. This number is dynamically computed on every page load.
+
+## Example
+
+<ReadingTime />
+
+## When to Use
+
+This component is used in the default header for every page. This is a quick way to give users a heads up about how long an individual page might take to consume. This is useful for blog posts, articles, or anything that has the potential to be longform content.
+
+## How to Use
+
+Add the following to a zine's script section:
+```javascript
+import ReadingTime from '$lib/components/reading-time.svelte';
+```
+
+Place the component anywhere in the document:
+```markdown
+<ReadingTime />
+```
+```markdown
+# Estimated Reading Time: <ReadingTime />
+```
