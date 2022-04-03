@@ -1,0 +1,133 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.ts"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "entries/pages/__layout.svelte.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js"
+    ],
+    "css": [
+      "assets/app-162d6d46.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js"
+    ]
+  },
+  "src/routes/index.zine": {
+    "file": "entries/pages/index.zine.js",
+    "src": "src/routes/index.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ],
+    "css": [
+      "assets/app-162d6d46.css"
+    ]
+  },
+  "src/routes/developer-docs/setup-vscode.zine": {
+    "file": "entries/pages/developer-docs/setup-vscode.zine.js",
+    "src": "src/routes/developer-docs/setup-vscode.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ]
+  },
+  "src/routes/components/index.zine": {
+    "file": "entries/pages/components/index.zine.js",
+    "src": "src/routes/components/index.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ]
+  },
+  "src/routes/components/reading-time.zine": {
+    "file": "entries/pages/components/reading-time.zine.js",
+    "src": "src/routes/components/reading-time.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ],
+    "css": [
+      "assets/entries/pages/components/reading-time.zine-0e1e7972.css"
+    ]
+  },
+  "src/routes/deployment/deployment-guide.zine": {
+    "file": "entries/pages/deployment/deployment-guide.zine.js",
+    "src": "src/routes/deployment/deployment-guide.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ]
+  },
+  "src/routes/examples/markdown-kitchen-sink.zine": {
+    "file": "entries/pages/examples/markdown-kitchen-sink.zine.js",
+    "src": "src/routes/examples/markdown-kitchen-sink.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ]
+  },
+  "src/routes/guides/developer-setup.zine": {
+    "file": "entries/pages/guides/developer-setup.zine.js",
+    "src": "src/routes/guides/developer-setup.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ]
+  },
+  "src/routes/guides/getting-started.zine": {
+    "file": "entries/pages/guides/getting-started.zine.js",
+    "src": "src/routes/guides/getting-started.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ]
+  },
+  "src/routes/guides/beginner-setup.zine": {
+    "file": "entries/pages/guides/beginner-setup.zine.js",
+    "src": "src/routes/guides/beginner-setup.zine",
+    "isEntry": true,
+    "imports": [
+      "_index-e1b49292.js",
+      "_default-layout-279951cd.js"
+    ]
+  },
+  "_index-e1b49292.js": {
+    "file": "chunks/index-e1b49292.js"
+  },
+  "_default-layout-279951cd.js": {
+    "file": "chunks/default-layout-279951cd.js",
+    "imports": [
+      "_index-e1b49292.js"
+    ]
+  },
+  "src/hooks.ts": {
+    "file": "chunks/hooks-87fb94fd.js",
+    "src": "src/hooks.ts",
+    "isDynamicEntry": true
+  }
+}

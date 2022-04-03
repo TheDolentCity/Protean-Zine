@@ -1,4 +1,4 @@
 [build]
-  command = "npm run --prefix protean-zine build"
-  publish = "protean-zine/build"
-  functions = "protean-zine/functions"
+  command = "npm run build"
+  publish = "build/"
+  functions = "functions/"
