@@ -1,6 +1,7 @@
 @import "@fontsource/ibm-plex-mono";
 @import "@fontsource/ibm-plex-sans";
 @import "@fontsource/ibm-plex-serif";
+@import "./styles/prism-code-theme.css";
 
 @tailwind base;
 @tailwind components;

@@ -20,6 +20,7 @@
 			<div class="mb-2 pl-2">
 				<DarkModeButton />
 			</div>
+			<hr class="my-4 border-core-900 dark:border-core-100 opacity-25" />
 			<div class="flex flex-col min-w-[10rem] space-y-1">
 				<Navigation />
 			</div>
@@ -27,15 +28,15 @@
 	
 		<div class="aspect-[1/1.4142] pt-8 pr-4 pb-12 overflow-y-auto scrollbar scrollbar-thumb-core-400 hover:scrollbar-thumb-core-500 scrollbar-track-core-200 dark:scrollbar-thumb-core-600 dark:hover:scrollbar-thumb-core-500 dark:scrollbar-track-core-800 mst">
 			<article id="zine" class="prose prose-neutral dark:prose-invert font-sans mst
-				prose-h1:font-semibold prose-h1:text-[4.25rem] prose-h1:leading-[5.75rem] prose-h1:text-focus
-				prose-h2:font-semibold prose-h2:text-[2.5rem]  prose-h2:leading-[3.25rem] prose-h2:text-focus
-				prose-h3:font-semibold prose-h3:text-[1.75rem] prose-h3:leading-[2.25rem] prose-h3:text-focus
-				prose-h4:font-semibold prose-h4:text-[1.25rem] prose-h4:leading-[1.75rem] prose-h4:text-focus
-				prose-h5:text-[1.125rem] prose-h5:leading-[1.5rem] prose-h5:text-focus
-				prose-h6:font-semibold prose-h6:text-[1rem] prose-h6:leading-[1.5rem] prose-h6:text-focus
+				prose-h1:font-semibold prose-h1:text-[4.25rem] prose-h1:leading-[5.75rem] prose-h1:text-focus prose-h1:mst
+				prose-h2:font-semibold prose-h2:text-[2.5rem]  prose-h2:leading-[3.25rem] prose-h2:text-focus prose-h2:mst
+				prose-h3:font-semibold prose-h3:text-[1.75rem] prose-h3:leading-[2.25rem] prose-h3:text-focus prose-h3:mst
+				prose-h4:font-semibold prose-h4:text-[1.25rem] prose-h4:leading-[1.75rem] prose-h4:text-focus prose-h4:mst
+				prose-h5:text-[1.125rem] prose-h5:leading-[1.5rem] prose-h5:text-focus prose-h5:mst
+				prose-h6:font-semibold prose-h6:text-[1rem] prose-h6:leading-[1.5rem] prose-h6:text-focus prose-h6:mst
 				prose-a:decoration-primary-600 prose-a:underline-offset-1 hover:prose-a:decoration-2
-				prose-code:not-prose
-				prose-pre:not-prose">
+				prose-code:whitespace-wrap prose-code:break-all
+				prose-pre:whitespace-wrap prose-pre:break-all">
 		
 				<Header author={author} date={date} github={github} twitter={twitter} website={website} />
 				

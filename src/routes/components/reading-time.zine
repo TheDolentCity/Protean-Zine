@@ -8,7 +8,6 @@ website: https://svelte.dev/
 ---
 
 <script>
-  import "$lib/../styles/prism-code-theme.css";
   import ReadingTime from '$lib/components/reading-time.svelte';
 </script>
 

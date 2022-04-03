@@ -7,7 +7,6 @@ website: https://svelte.dev/
 ---
 
 <script>
-  import "../app.css";
 	import ReadingTime from '$lib/components/reading-time.svelte';
   import DocumentAttachment32 from "carbon-icons-svelte/lib/DocumentAttachment32";
 </script>
@@ -31,7 +30,7 @@ website: https://svelte.dev/
     <div class="flex flex-col text-left">
       <h3 class="text-lg font-semibold">Rich Markdown</h3>
       <p>Zines are Markdown + Components. You can import elements like a reading time calculator (<span class="chip"><ReadingTime /></span>) in Markdown files like this one to provide dynamic information.</p>
-      <a href="/content/components" class="focus-link mt-1">See components ⟶</a>
+      <a href="/components/" class="focus-link mt-1">See components ⟶</a>
     </div>
     <div class="flex flex-col text-left">
       <h3 class="text-lg font-semibold">RPG Focused</h3>

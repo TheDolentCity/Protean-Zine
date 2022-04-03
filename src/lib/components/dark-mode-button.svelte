@@ -6,15 +6,15 @@
 </script>
 
 {#if $darkMode && $darkMode === Theme.Dark.name}
-  <button on:click={() => $darkMode = Theme.Light.name} class="mst">
+  <button on:click={() => $darkMode = Theme.Light.name}>
     <Moon24 />
   </button>
 {:else if $darkMode && $darkMode === Theme.Light.name}
-  <button on:click={() => $darkMode = Theme.Dark.name} class="mst">
+  <button on:click={() => $darkMode = Theme.Dark.name}>
     <Sun24 />
   </button>
 {:else}
-  <button on:click={() => $darkMode = Theme.Light.name} class="mst">
+  <button on:click={() => $darkMode = Theme.Light.name}>
     <Moon24 />
   </button>
 {/if}
