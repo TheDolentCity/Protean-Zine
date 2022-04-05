@@ -3,7 +3,7 @@
 	import { openRoutes } from '$lib/stores/navigation-store.js';
 	import { CssBuilder } from '$lib/builders/cssBuilder.js';
 	import ChevronDown20 from 'carbon-icons-svelte/lib/ChevronDown20';
-	import ChevronUp20 from 'carbon-icons-svelte/lib/ChevronUp20';
+	import ChevronRight20 from 'carbon-icons-svelte/lib/ChevronRight20';
 
 	export let link;
 	export let title;
@@ -12,34 +12,41 @@
 		$openRoutes[link] = !$openRoutes[link];
 	}
 
-  $: css = () => {
+	function selectLink() {
+		if (link === $page?.url?.pathname) {
+			$openRoutes[link] = !$openRoutes[link];
+		}
+		else $openRoutes[link] = true;
+	}
+
+  $: linkCss = () => {
 		return new CssBuilder()
-			.addClass('flex-auto p-2 rounded leading-none whitespace-nowrap hover:raise-5')
-			.addClass('underline decoration-2 decoration-primary-600 underline-offset-1', link === $page?.url?.pathname)
+			.addClass('flex-auto p-2 rounded leading-none whitespace-nowrap underline-offset-1 hover:underline')
+			.addClass('underline decoration-2 decoration-primary-600', link === $page?.url?.pathname)
 			.build();
 	};
 </script>
 
 {#if $$slots.subroutes}
 	<div class="flex w-full">
-		<button on:click={toggleExpansion} class="pl-1">
+		<button on:click={toggleExpansion} class="pl-1 cursor-default">
 			{#if $openRoutes[link]}
-				<ChevronUp20 />
-			{:else}
 				<ChevronDown20 />
+			{:else}
+				<ChevronRight20 />
 			{/if}
 		</button>
-		<a href={link} class={css()}>
+		<a on:click={selectLink} href={link} class={linkCss()}>
 			{title}
 		</a>
 	</div>
-	<div class="flex flex-col pl-6">
-		{#if $openRoutes[link]}
+	{#if $openRoutes[link]}
+		<div class="flex flex-col pl-8">
 			<slot name="subroutes" />
-		{/if}
-	</div>
+		</div>
+	{/if}
 {:else}
-	<a href={link} class={css()}>
+	<a href={link} class={linkCss()}>
 		{title}
 	</a>
 {/if}

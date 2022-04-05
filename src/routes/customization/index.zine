@@ -1,0 +1,43 @@
+---
+title: Customization
+author: Dante Nardo
+date: Apr 4th
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
+---
+
+<script>
+  import DocumentAttachment32 from "carbon-icons-svelte/lib/DocumentAttachment32";
+</script>
+
+You have total control over the styling of your zines through layouts, Tailwind CSS, and inline styling. While we provide opinionated default styling, you still have full control over editing every aspect of it, from colors to typography.
+
+## Layouts
+Layouts are the most common method of customization. They provide a template for your zines (similar to Master pages in traditional publishing) so you only need to write them once and they're applied automatically.
+
+The Protean Zine template comes with two layouts, a default that supports light and dark mode and a paper mode that mimics a more analog book feel.
+
+## Tailwind CSS
+Protean Zine is built on top of Tailwind CSS, a popular CSS framework. This comes with a few benefits, including, [amazing documentation](https://tailwindcss.com/), easy theme configuration, and plugins that extend it's functionality. The Tailwind CSS Typography plugin alone beautifully styles markdown documents. 
+
+## Inline Styles
+Since Markdown compiles down to HTML and CSS you can write HTML and CSS manually in your zines. By default, you have full access to the Tailwind CSS framework utility classes as well.
+
+Take this example from the home page:
+
+<div class="not-prose flex flex-col pt-12 pb-24 items-center">
+  <DocumentAttachment32 class="w-24 h-24 mb-4 text-center text-primary-600" />
+  <h1 class="font-semibold text-[2.5rem] leading-none text-focus mb-4 mst">Protean Zine</h1>
+  <h2 class="font-light text-[1.5rem] leading-none text-focus mst">Rich Markdown Sites for RPGs</h2>
+</div>
+
+This is not traditional markdown formatting. It could only be accomplished with HTML and CSS. While this might not be the most accessible (what do all of these words mean? w-24??) it is a powerful tool for advanced users.
+
+```html
+<div class="not-prose flex flex-col pt-12 pb-24 items-center">
+  <DocumentAttachment32 class="w-24 h-24 mb-4 text-center text-primary-600" />
+  <h1 class="font-semibold text-[2.5rem] leading-none text-focus mb-4 mst">Protean Zine</h1>
+  <h2 class="font-light text-[1.5rem] leading-none text-focus mst">Rich Markdown Sites for RPGs</h2>
+</div>
+```

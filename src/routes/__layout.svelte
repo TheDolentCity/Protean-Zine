@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script context="module">
   import "../app.css";
 </script>
 

@@ -1,0 +1,54 @@
+---
+title: Layouts
+author: Dante Nardo
+date: Apr 4th
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
+---
+
+<script>
+</script>
+
+
+
+## Frontmatter
+Frontmatter is the general term for a specially formatted block of content at the top of a zine. It is commonly used to declare the author, date, or other metadata related to a page that isn't the content of the page itself.
+
+The header in the default zine layout uses this information for social media links and the author information.
+
+### Use In Zine
+
+This is the exact frontmatter declared in this layout. It's that easy!
+
+```yaml
+---
+title: Layouts
+author: Dante Nardo
+date: Apr 4th
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
+---
+```
+
+### Declaration In Default Layout
+The underlying framework handles parsing the frontmatter, but you still need to declare the frontmatter variables as properties on the layout.svelte component.
+
+```svelte
+<script>
+  export let title;
+  export let author;
+  export let date;
+  export let github;
+  export let twitter;
+  export let website;
+</script>
+```
+
+### Use In Default Layout
+You can pass the frontmatter properties from the layout file to any number of components, just like this one.
+
+```svelte
+<Header author={author} date={date} github={github} twitter={twitter} website={website} />
+```
