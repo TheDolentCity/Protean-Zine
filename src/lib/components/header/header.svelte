@@ -15,11 +15,11 @@
   <div class="flex flex-col space-y-2">
     <!-- Author -->
     {#if author}
-      <div class="leading-none font-semibold text-default">{author}</div>
+      <div class="leading-none text-sm font-semibold text-focus">{author}</div>
     {/if}
     <!-- Date and Reading Time -->
     {#if date}
-      <div class="leading-none">
+      <div class="leading-none text-sm">
         {date} · <ReadingTime />
       </div>
     {/if}

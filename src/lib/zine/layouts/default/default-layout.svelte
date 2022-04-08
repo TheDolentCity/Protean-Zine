@@ -2,6 +2,7 @@
 	import { darkMode } from "$lib/stores/dark-mode-store";
 	import { Theme } from "$lib/enums/theme";
 	import Header from "$lib/components/header/header.svelte";
+	import ContentWarning from "$lib/components/content-warning/content-warning.svelte";
 	import DarkModeButton from '$lib/components/dark-mode-button/dark-mode-button.svelte';
 	import Navigation from "$lib/zine/navigation/navigation.svelte";
 
@@ -45,6 +46,8 @@
 				prose-code:whitespace-wrap prose-code:break-all prose-code:scrollbar prose-code:scrollbar-thumb-core-400 prose-code:scrollbar-track-core-200 prose-code:dark:scrollbar-thumb-core-600 prose-code:dark:scrollbar-track-core-800 mst
 				prose-pre:whitespace-wrap prose-pre:break-all prose-pre:scrollbar prose-pre:scrollbar-thumb-core-400 prose-pre:scrollbar-track-core-200 prose-pre:dark:scrollbar-thumb-core-600 prose-pre:dark:scrollbar-track-core-800 mst">
 		
+				<ContentWarning />
+
 				<Header author={author} date={date} github={github} twitter={twitter} website={website} />
 				
 				{#if title}
