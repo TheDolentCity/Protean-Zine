@@ -1,5 +1,5 @@
 <script>
-  import ReadingTime from "./reading-time.svelte";
+  import ReadingTime from "$lib/components/reading-time/reading-time.svelte";
   import LogoGithub24 from "carbon-icons-svelte/lib/LogoGithub24";
   import LogoTwitter24 from "carbon-icons-svelte/lib/LogoTwitter24";
   import Link24 from "carbon-icons-svelte/lib/Link24";
@@ -14,11 +14,15 @@
 <div class="flex w-full space-x-12 mb-12 justify-between items-center font-mono">
   <div class="flex flex-col space-y-2">
     <!-- Author -->
-    <div class="leading-none font-semibold text-default">{author}</div>
+    {#if author}
+      <div class="leading-none font-semibold text-default">{author}</div>
+    {/if}
     <!-- Date and Reading Time -->
-    <div class="leading-none">
-      {date} · <ReadingTime />
-    </div>
+    {#if date}
+      <div class="leading-none">
+        {date} · <ReadingTime />
+      </div>
+    {/if}
   </div>
   <!-- Social Media Links -->
   <div class="flex space-x-1">

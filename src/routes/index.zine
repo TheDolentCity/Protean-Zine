@@ -7,7 +7,7 @@ website: https://svelte.dev/
 ---
 
 <script>
-	import ReadingTime from '$lib/components/reading-time.svelte';
+	import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
   import DocumentAttachment32 from "carbon-icons-svelte/lib/DocumentAttachment32";
 </script>
 

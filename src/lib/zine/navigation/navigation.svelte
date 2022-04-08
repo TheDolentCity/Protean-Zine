@@ -1,5 +1,5 @@
 <script>
-  import NavigationLink from "$lib/components/navigation-link.svelte";
+  import NavigationLink from "$lib/components/navigation-link/navigation-link.svelte";
 </script>
 
 <NavigationLink title="Home" link="/" />

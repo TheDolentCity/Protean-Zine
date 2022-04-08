@@ -1,9 +1,9 @@
 <script>
 	import { darkMode } from "$lib/stores/dark-mode-store";
 	import { Theme } from "$lib/enums/theme";
-	import Header from "$lib/components/header.svelte";
-	import DarkModeButton from '$lib/components/dark-mode-button.svelte';
-	import Navigation from "$lib/components/navigation.svelte";
+	import Header from "$lib/components/header/header.svelte";
+	import DarkModeButton from '$lib/components/dark-mode-button/dark-mode-button.svelte';
+	import Navigation from "$lib/zine/navigation/navigation.svelte";
 
 	/**
 	 * Frontmatter properties. 
