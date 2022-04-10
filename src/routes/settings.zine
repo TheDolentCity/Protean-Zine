@@ -1,0 +1,14 @@
+---
+title: Settings
+author: Dante Nardo
+date: Apr 10th
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
+---
+
+<script>
+  import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+</script>
+
+This is the user settings page to control your own personal experience when browsing zines on this site.

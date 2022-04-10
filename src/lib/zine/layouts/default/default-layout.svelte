@@ -3,8 +3,9 @@
 	import { Theme } from "$lib/enums/theme";
 	import Header from "$lib/components/header/header.svelte";
 	import ContentWarning from "$lib/components/content-warning/content-warning.svelte";
-	import DarkModeButton from '$lib/components/dark-mode-button/dark-mode-button.svelte';
+	import CommandDarkMode from '$lib/components/command-dark-mode/command-dark-mode.svelte';
 	import Navigation from "$lib/zine/navigation/navigation.svelte";
+	import CommandSettings from "$lib/components/command-settings/command-settings.svelte";
 
 	/**
 	 * Frontmatter properties. 
@@ -25,8 +26,9 @@
 <div class={$darkMode === Theme.Dark.name ? 'dark' : $darkMode === Theme.Light.name ? '' : 'dark'}>
 	<div class="flex w-screen h-screen max-w-screen max-h-screen space-x-16 justify-center text-default bg-core-100 dark:bg-core-900 mst">
 		<div class="pt-8 pl-4">
-			<div class="mb-2 pl-2">
-				<DarkModeButton />
+			<div class="flex mb-2 pl-2 space-x-4">
+				<CommandSettings />
+				<CommandDarkMode />
 			</div>
 			<hr class="my-4 border-core-900 dark:border-core-100 opacity-25" />
 			<div class="flex flex-col min-w-[10rem]">

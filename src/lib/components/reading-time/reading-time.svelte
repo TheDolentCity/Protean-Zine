@@ -2,18 +2,30 @@
   import { onMount } from "svelte";
   import readtime from "estimated-read-time";
 
-  let minutesToRead;
+  // let minutesToRead;
+  let promise;
 
-  onMount(() => {
+  async function getMinutesToRead() {
     let zine = document.getElementById("zine");
     let result = zine?.textContent ? readtime.text(zine.textContent) : null;
     
     if (result) {
-      minutesToRead = Math.ceil(result.seconds / 60).toString();
+      let text = Math.ceil(result.seconds / 60).toString();
+      return text;
     }
+    
+    throw new Error();
+	}
+
+  onMount(() => {
+    promise = getMinutesToRead();
   });
 </script>
 
-{#if minutesToRead}
+{#await promise}
+  <span class="">Calculating reading time</span>
+{:then minutesToRead}
   <span class="">{minutesToRead} min read</span>
-{/if}
+{:catch error}
+  <span class="">Unknown min read</span>
+{/await}
