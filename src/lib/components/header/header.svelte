@@ -12,7 +12,7 @@
 </script>
 
 {#if author || date || github || twitter || website}
-	<div class="flex w-full space-x-12 mb-12 justify-between items-center font-mono">
+	<div class="flex w-full gap-6 lg:gap-12 mb-12 justify-between items-center font-mono">
 		<div class="flex flex-col space-y-2">
 			<!-- Author -->
 			{#if author}
