@@ -11,35 +11,37 @@
   export let website;
 </script>
 
-<div class="flex w-full space-x-12 mb-12 justify-between items-center font-mono">
-  <div class="flex flex-col space-y-2">
-    <!-- Author -->
-    {#if author}
-      <div class="leading-none text-sm font-semibold text-focus">{author}</div>
-    {/if}
-    <!-- Date and Reading Time -->
-    {#if date}
-      <div class="leading-none text-sm">
-        {date} · <ReadingTime />
-      </div>
-    {/if}
-  </div>
-  <!-- Social Media Links -->
-  <div class="flex space-x-1">
-    {#if github}
-      <a href={github} class="p-1 cursor-pointer">
-        <LogoGithub24 />
-      </a>
-    {/if}
-    {#if twitter}
-      <a href={twitter} class="p-1 cursor-pointer">
-        <LogoTwitter24 />
-      </a>
-    {/if}
-    {#if website}
-      <a href={website} class="p-1 cursor-pointer">
-        <Link24 />
-      </a>
-    {/if}
-  </div>
-</div>
+{#if author || date || github || twitter || website}
+	<div class="flex w-full space-x-12 mb-12 justify-between items-center font-mono">
+		<div class="flex flex-col space-y-2">
+			<!-- Author -->
+			{#if author}
+				<div class="leading-none text-sm font-semibold text-focus">{author}</div>
+			{/if}
+			<!-- Date and Reading Time -->
+			{#if date}
+				<div class="leading-none text-sm">
+					{date} · <ReadingTime />
+				</div>
+			{/if}
+		</div>
+		<!-- Social Media Links -->
+		<div class="flex space-x-1">
+			{#if github}
+				<a href={github} class="p-1 cursor-pointer">
+					<LogoGithub24 />
+				</a>
+			{/if}
+			{#if twitter}
+				<a href={twitter} class="p-1 cursor-pointer">
+					<LogoTwitter24 />
+				</a>
+			{/if}
+			{#if website}
+				<a href={website} class="p-1 cursor-pointer">
+					<Link24 />
+				</a>
+			{/if}
+		</div>
+	</div>
+{/if}

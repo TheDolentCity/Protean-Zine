@@ -21,8 +21,8 @@
 
   $: linkCss = () => {
 		return new CssBuilder()
-			.addClass('flex-auto p-2 rounded leading-none whitespace-nowrap underline-offset-1 hover:underline')
-			.addClass('underline decoration-2 decoration-primary-600', link === $page?.url?.pathname)
+			.addClass('p-2 rounded leading-none whitespace-nowrap underline-offset-1 hover:underline')
+			.addClass('underline underline-offset-2 decoration-2 decoration-primary-700 dark:decoration-primary-600', link === $page?.url?.pathname)
 			.build();
 	};
 </script>
