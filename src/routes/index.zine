@@ -26,7 +26,7 @@ website: https://svelte.dev/
     </a>
   </div>
   <hr class="my-24 border-core-900 dark:border-core-100 opacity-25" />
-  <div class="grid grid-cols-2 gap-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
     <div class="flex flex-col text-left">
       <h3 class="text-lg font-semibold">Rich Markdown</h3>
       <p>Zines are Markdown + Components. You can import elements like a reading time calculator (<span class="chip"><ReadingTime /></span>) in Markdown files like this one to provide dynamic information.</p>

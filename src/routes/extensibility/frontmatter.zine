@@ -1,41 +1,14 @@
 ---
-title: Components
+title: Frontmatter
 author: Dante Nardo
-date: Apr 2nd
+date: Apr 30th
 github: https://github.com/TheDolentCity/Protean-Zine
 twitter: https://twitter.com/nardogamedev
 website: https://svelte.dev/
 ---
 
 <script>
-  import ReadingTime from '$lib/components/reading-time.svelte';
+  import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
 </script>
 
-Components are the dynamic and rich media elements that Markdown lacks. A component can be a chart, form, or even 3D animated dice. They can make decisions about their data and react to state across a page or application.
-
-
-## This is a Component
-
-This page is a <ReadingTime />.
-
-## This is its Source
-
-```markdown
-<script>
-  import ReadingTime from '$lib/components/reading-time.svelte';
-</script>
-
-## Here's a Component
-
-This page is a <ReadingTime />.
-```
-
-
-## Imports
-
-Components have to be imported manually in each file. Imports exist within a script element at the top of a page.
-```markdown
-<script>
-  import ReadingTime from '$lib/components/reading-time.svelte';
-</script>
-```
+TODO

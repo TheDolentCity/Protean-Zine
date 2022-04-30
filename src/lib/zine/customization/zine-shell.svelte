@@ -15,7 +15,7 @@
 				<ZineNavigation />
 			</div>
 		</div>
-		<div class="flex flex-1 h-full max-h-full justify-center scroll-y">
+		<div class="flex flex-1 h-full max-h-full pr-4 justify-center scroll-y">
 			<slot></slot>
 		</div>
 	</div>
