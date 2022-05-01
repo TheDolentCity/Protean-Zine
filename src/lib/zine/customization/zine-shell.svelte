@@ -21,7 +21,7 @@
 				</button>
 				<ZineCommands />
 			</div>
-			<div class="hidden lg:flex flex-col min-w-[10rem] h-full max-h-full pl-4 pr-8 py-4 border-r border-default scroll-y mst">
+			<div class="hidden lg:flex flex-col h-full max-h-full border-r border-default scroll-y mst">
 				<ZineNavigation />
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 			</div>
 			 <!-- content here -->
 		{:else if  activeView === 'navigation'}
-			<div class="absolute lg:hidden left-14 right-0 top-0 bottom-0 flex flex-col p-4 scroll-y bg-core-100 dark:bg-core-900">
+			<div class="absolute lg:hidden left-14 right-0 top-0 bottom-0 flex flex-col scroll-y bg-core-100 dark:bg-core-900">
 				<ZineNavigation />
 			</div>
 		{:else}

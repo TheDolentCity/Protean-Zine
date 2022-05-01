@@ -7,6 +7,7 @@
 
 	export let link;
 	export let title;
+	export let level = 0;
 
 	function toggleExpansion() {
 		$openRoutes[link] = !$openRoutes[link];
@@ -19,34 +20,42 @@
 		else $openRoutes[link] = true;
 	}
 
-  $: linkCss = () => {
+	$: containerCss = () => {
 		return new CssBuilder()
-			.addClass('p-2 rounded leading-none whitespace-nowrap underline-offset-1 hover:underline')
-			.addClass('underline underline-offset-2 decoration-2 decoration-primary-700 dark:decoration-primary-600', link === $page?.url?.pathname)
+			.addClass('relative flex w-full bg-default hover:raise-5')
+			.addClass('raise-5', link === $page?.url?.pathname)
+			.build();
+	};
+
+  $: anchorCss = () => {
+		return new CssBuilder()
+			.addClass('w-56 px-4 py-2 leading-none whitespace-nowrap')
+			.addClass('font-semibold before:content-[""] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-primary-600', link === $page?.url?.pathname)
+			.addClass(`ml-[${level}rem]`, level != 0)
 			.build();
 	};
 </script>
 
-{#if $$slots.subroutes}
-	<div class="flex w-full">
-		<button on:click={toggleExpansion} class="pl-1 cursor-default">
+<div class={containerCss()}>
+	{#if $$slots.subroutes}
+		<a on:click={selectLink} href={link} class={anchorCss()}>
+			{title}
+		</a>
+		<button on:click={toggleExpansion} class="pl-1 pr-2 cursor-default">
 			{#if $openRoutes[link]}
 				<ChevronDown20 />
 			{:else}
 				<ChevronRight20 />
 			{/if}
 		</button>
-		<a on:click={selectLink} href={link} class={linkCss()}>
+	{:else}
+		<a href={link} class={anchorCss()}>
 			{title}
 		</a>
-	</div>
-	{#if $openRoutes[link]}
-		<div class="flex flex-col pl-8">
-			<slot name="subroutes" />
-		</div>
 	{/if}
-{:else}
-	<a href={link} class={linkCss()}>
-		{title}
-	</a>
+</div>
+{#if $$slots.subroutes && $openRoutes[link]}
+	<div class="flex flex-col">
+		<slot name="subroutes" />
+	</div>
 {/if}

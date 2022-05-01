@@ -41,6 +41,9 @@
 	.border-default {
 		@apply border-core-300 dark:border-core-600;
 	}
+	.bg-default {
+		@apply bg-core-100 dark:bg-core-900;
+	}
   .raise-5 {
     @apply bg-core-900 bg-opacity-5 dark:bg-core-50 dark:bg-opacity-5;
   }
