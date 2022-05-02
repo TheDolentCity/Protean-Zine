@@ -22,7 +22,7 @@
 
 	$: containerCss = () => {
 		return new CssBuilder()
-			.addClass('relative flex min-w-[14rem] justify-between bg-default hover:raise-5')
+			.addClass('relative flex min-w-[14rem] justify-between bg-opacity-0 hover:raise-5')
 			.addClass('raise-5', link === $page?.url?.pathname)
 			.build();
 	};

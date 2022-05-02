@@ -1,0 +1,18 @@
+---
+title: Layouts
+author: Dante Nardo
+date: May 1st
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
+---
+
+<script>
+</script>
+
+
+
+## Frontmatter
+Frontmatter is the general term for a specially formatted block of content at the top of a zine. It is commonly used to declare the author, date, or other metadata related to a page that isn't the content of the page itself.
+
+The header in the default zine layout uses this information for social media links and the author information.

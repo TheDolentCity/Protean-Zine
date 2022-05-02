@@ -1,0 +1,14 @@
+---
+layout: paper
+title: Paper Layout
+author: Dante Nardo
+date: May 1st
+github: https://github.com/TheDolentCity/Protean-Zine
+twitter: https://twitter.com/nardogamedev
+website: https://svelte.dev/
+---
+
+<script>
+</script>
+
+This page shows off the alternate **paper** layout. It uses a background texture for the entire page.

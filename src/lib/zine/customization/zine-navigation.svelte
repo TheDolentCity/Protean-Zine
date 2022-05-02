@@ -14,7 +14,12 @@
 </NavigationLink>
 <NavigationLink title="Customization" link="/customization">
   <svelte:fragment slot="subroutes">
-    <NavigationLink level={1} title="Layouts" link="/customization/layouts"></NavigationLink>
+    <NavigationLink level={1} title="Layouts" link="/customization/layouts">
+			<svelte:fragment slot="subroutes">
+				<NavigationLink level={2} title="Default" link="/customization/layouts/default"></NavigationLink>
+				<NavigationLink level={2} title="Paper" link="/customization/layouts/paper"></NavigationLink>
+			</svelte:fragment>
+		</NavigationLink>
     <NavigationLink level={1} title="Typography" link="/customization/typography"></NavigationLink>
   </svelte:fragment>
 </NavigationLink>
