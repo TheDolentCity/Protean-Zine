@@ -3,9 +3,6 @@
 	import { Theme } from "$lib/enums/theme";
 	import BlogHeader from "$lib/components/blog-header/blog-header.svelte";
 	import ContentWarning from "$lib/widgets/content-warning/content-warning.svelte";
-	import ZineContent from "$lib/zine/customization/zine-content.svelte";
-	import ZineHeader from "$lib/zine/customization/zine-header.svelte";
-	import ZineShell from "$lib/zine/customization/zine-shell.svelte";
 	import ZineWrapper from '$lib/zine/customization/zine-wrapper.svelte';
 
 	/**
