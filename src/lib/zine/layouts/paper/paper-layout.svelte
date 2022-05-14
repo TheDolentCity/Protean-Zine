@@ -3,7 +3,7 @@
 	import { darkMode } from "$lib/stores/dark-mode-store";
 	import { Theme } from "$lib/enums/theme";
 	import Header from "$lib/components/header/header.svelte";
-	import ContentWarning from "$lib/components/content-warning/content-warning.svelte";
+	import ContentWarning from "$lib/widgets/content-warning/content-warning.svelte";
 	import ZineContent from "$lib/zine/customization/zine-content.svelte";
 	import ZineShell from "$lib/zine/customization/zine-shell.svelte";
 

@@ -1,5 +1,5 @@
 <script>
-  import ReadingTime from "$lib/components/reading-time/reading-time.svelte";
+  import ReadingTime from "$lib/widgets/reading-time/reading-time.svelte";
   import LogoGithub24 from "carbon-icons-svelte/lib/LogoGithub24";
   import LogoTwitter24 from "carbon-icons-svelte/lib/LogoTwitter24";
   import Link24 from "carbon-icons-svelte/lib/Link24";

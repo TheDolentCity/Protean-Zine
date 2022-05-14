@@ -14,7 +14,7 @@
 </script>
 
 <div class="flex">
-	<div class="flex-none relative z-30 flex flex-col h-full max-h-full gap-4 p-4 overflow-y-auto raise-5 mst">
+	<div class="flex-none relative z-30 flex flex-col h-full max-h-full gap-4 p-4 overflow-y-auto border-r border-raise-5 mst">
 		<button on:click|stopPropagation={toggleNavigation} class="lg:hidden">
 			<Menu24 />
 		</button>
@@ -30,7 +30,7 @@
 
 <!-- Overlay versions -->
 {#if activeView === 'navigation'}
-	<div use:clickOutside={() => activeView = ''} class="absolute z-10 lg:hidden left-14 top-0 bottom-0 flex flex-col py-3 shadow-2xl scroll-y bg-core-100 dark:bg-core-900">
+	<div use:clickOutside={() => activeView = ''} class="absolute z-10 lg:hidden left-14 top-0 bottom-0 flex flex-col py-3 shadow-2xl scroll-y bg-core-50 dark:bg-core-950">
 		<ZineNavigation />
 	</div>
 {:else}

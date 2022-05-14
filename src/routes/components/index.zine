@@ -8,7 +8,8 @@ website: https://svelte.dev/
 ---
 
 <script>
-  import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+  import Radio from '$lib/widgets/radio/radio.svelte';
+  import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 </script>
 
 Components are the dynamic and rich media elements that Markdown lacks. A component can be a chart, form, or even 3D animated dice. They can make decisions about their data and react to state across a page or application.
@@ -22,7 +23,7 @@ This page is a <ReadingTime />.
 
 ```markdown
 <script>
-  import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+  import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 </script>
 
 ## Here's a Component
@@ -36,6 +37,6 @@ This page is a <ReadingTime />.
 Components have to be imported manually in each file. Imports exist within a script element at the top of a page.
 ```markdown
 <script>
-  import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+  import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 </script>
 ```

@@ -1,10 +1,12 @@
 <script>
 	import { darkMode } from "$lib/stores/dark-mode-store";
 	import { Theme } from "$lib/enums/theme";
-	import Header from "$lib/components/header/header.svelte";
-	import ContentWarning from "$lib/components/content-warning/content-warning.svelte";
+	import BlogHeader from "$lib/components/blog-header/blog-header.svelte";
+	import ContentWarning from "$lib/widgets/content-warning/content-warning.svelte";
 	import ZineContent from "$lib/zine/customization/zine-content.svelte";
+	import ZineHeader from "$lib/zine/customization/zine-header.svelte";
 	import ZineShell from "$lib/zine/customization/zine-shell.svelte";
+	import ZineWrapper from '$lib/zine/customization/zine-wrapper.svelte';
 
 	/**
 	 * Frontmatter properties. 
@@ -23,21 +25,19 @@
 </svelte:head>
 
 <div class={$darkMode === Theme.Dark.name ? 'dark' : $darkMode === Theme.Light.name ? '' : 'dark'}>
-	<div class="flex w-screen h-screen max-w-screen max-h-screen gap-4 lg:gap-8 justify-between text-default font-sans bg-core-100 dark:bg-core-900 mst">
-		<ZineShell>
-			<ZineContent>
-				<ContentWarning />
-				<Header author={author} date={date} github={github} twitter={twitter} website={website} />
-				
-				<!-- Page Title pulled from Frontmatter -->
-				{#if title}
-					<h1>{title}</h1>
-				{/if}
-				
-				<slot>
-					<!-- the mdsvex content will be slotted in here -->
-				</slot>
-			</ZineContent>
-		</ZineShell>
+	<div class="flex w-screen h-screen max-w-screen max-h-screen px-8 gap-4 lg:gap-8 justify-center scroll-y text-default font-sans bg-default mst">
+		<ZineWrapper>
+			<ContentWarning />
+			<BlogHeader author={author} date={date} github={github} twitter={twitter} website={website} />
+			
+			<!-- Page Title pulled from Frontmatter -->
+			{#if title}
+				<h1>{title}</h1>
+			{/if}
+			
+			<slot>
+				<!-- the mdsvex content will be slotted in here -->
+			</slot>
+		</ZineWrapper>
 	</div>
 </div>

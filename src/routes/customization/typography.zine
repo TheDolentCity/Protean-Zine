@@ -8,7 +8,7 @@ website: https://svelte.dev/
 ---
 
 <script>
-  import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+  import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 </script>
 
 TODO

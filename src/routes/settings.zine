@@ -3,7 +3,7 @@ title: Settings
 ---
 
 <script>
-  import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+  import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 </script>
 
 This is the user settings page to control your own personal experience when browsing zines on this site.

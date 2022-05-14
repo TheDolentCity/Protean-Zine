@@ -7,13 +7,13 @@ website: https://svelte.dev/
 ---
 
 <script>
-	import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+	import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
   import DocumentAttachment32 from "carbon-icons-svelte/lib/DocumentAttachment32";
 </script>
 
 <div class="not-prose flex flex-col pt-12 justify-center text-center">
   <div class="flex flex-col items-center">
-    <DocumentAttachment32 class="w-24 h-24 mb-4 text-center text-primary-600" />
+    <DocumentAttachment32 class="w-24 h-24 mb-4 text-center text-primary-600 dark:text-primary-400" />
     <h1 class="font-semibold text-[2.5rem] leading-none text-focus mb-4 mst">Protean Zine</h1>
     <h2 class="font-light text-[1.5rem] leading-none text-focus mst">Rich Markdown Sites for RPGs</h2>
   </div>

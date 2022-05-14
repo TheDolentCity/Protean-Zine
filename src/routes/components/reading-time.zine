@@ -8,7 +8,7 @@ website: https://svelte.dev/
 ---
 
 <script>
-  import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+  import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 </script>
 
 This component renders the number of minutes to read the current page. This number is dynamically computed on every page load.
@@ -25,7 +25,7 @@ This component is used in the default header for every page. This is a quick way
 
 Add the following to a zine's script section:
 ```javascript
-import ReadingTime from '$lib/components/reading-time/reading-time.svelte';
+import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 ```
 
 Place the component anywhere in the document:

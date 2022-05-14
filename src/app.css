@@ -1,6 +1,9 @@
 @import "@fontsource/ibm-plex-mono";
 @import "@fontsource/ibm-plex-sans";
 @import "@fontsource/ibm-plex-serif";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/variable-full.css";
+
 @import "./styles/prism-code-theme.css";
 
 @tailwind base;
@@ -18,7 +21,7 @@
     @apply bg-core-900 dark:bg-core-50 text-focus-invert;
   }
   .btn-secondary {
-    @apply bg-primary-600 text-core-50;
+    @apply bg-primary-600 dark:bg-primary-400 text-core-50 dark:text-core-900;
   }
   .chip {
     @apply p-1 rounded text-xs font-mono font-semibold text-focus bg-core-200 dark:bg-core-700 mst;
@@ -30,7 +33,7 @@
 
 @layer utilities {
   .text-default {
-    @apply text-core-600 dark:text-core-300;
+    @apply text-core-600 dark:text-core-400;
   }
   .text-focus {
     @apply text-core-900 dark:text-core-50;
@@ -41,23 +44,44 @@
 	.border-default {
 		@apply border-core-300 dark:border-core-600;
 	}
+	.border-focus {
+		@apply border-core-900 dark:border-core-50;
+	}
 	.bg-default {
 		@apply bg-core-100 dark:bg-core-900;
 	}
-  .raise-5 {
-    @apply bg-core-900 bg-opacity-5 dark:bg-core-50 dark:bg-opacity-5;
+	.bg-invert {
+		@apply bg-core-900 dark:bg-core-100;
+	}
+  .bg-raise-5 {
+    @apply bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5;
   }
-  .raise-10 {
-    @apply bg-core-900 bg-opacity-10 dark:bg-core-50 dark:bg-opacity-10; 
+  .bg-raise-10 {
+    @apply bg-black bg-opacity-10 dark:bg-white dark:bg-opacity-10; 
   }
-  .raise-15 {
-    @apply bg-core-900 bg-opacity-15 dark:bg-core-50 dark:bg-opacity-15; 
+  .bg-raise-15 {
+    @apply bg-black bg-opacity-15 dark:bg-white dark:bg-opacity-15; 
   }
-  .raise-20 {
-    @apply bg-core-900 bg-opacity-20 dark:bg-core-50 dark:bg-opacity-20; 
+  .bg-raise-20 {
+    @apply bg-black bg-opacity-20 dark:bg-white dark:bg-opacity-20; 
   }
-  .raise-25 {
-    @apply bg-core-900 bg-opacity-25 dark:bg-core-50 dark:bg-opacity-25; 
+  .bg-raise-25 {
+    @apply bg-black bg-opacity-25 dark:bg-white dark:bg-opacity-25; 
+  }
+  .border-raise-5 {
+    @apply border-black border-opacity-5 dark:border-white dark:border-opacity-5;
+  }
+  .border-raise-10 {
+    @apply border-black border-opacity-10 dark:border-white dark:border-opacity-10; 
+  }
+  .border-raise-15 {
+    @apply border-black border-opacity-15 dark:border-white dark:border-opacity-15; 
+  }
+  .border-raise-20 {
+    @apply border-black border-opacity-20 dark:border-white dark:border-opacity-20; 
+  }
+  .border-raise-25 {
+    @apply border-black border-opacity-25 dark:border-white dark:border-opacity-25; 
   }
 	.scroll-y {
 		@apply overflow-y-auto scrollbar scrollbar-thumb-core-400 scrollbar-track-core-200 dark:scrollbar-thumb-core-600 dark:scrollbar-track-core-800;
