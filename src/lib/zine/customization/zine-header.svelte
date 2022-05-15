@@ -1,13 +1,21 @@
 <script>
-  
+	import CommandSearch from '$lib/components/command-search/command-search.svelte';
+  import CommandSettings from '$lib/components/command-settings/command-settings.svelte';
+	import ZineContent from '$lib/zine/customization/zine-content.svelte';
+	import ZineCommands from '$lib/zine/customization/zine-commands.svelte';
 </script>
 
-<div class="w-full">
-  <div class="flex w-full gap-6 lg:gap-12 mb-12 justify-between items-center">
-    <h1>Test</h1>
-  </div>
-  <div class="flex w-full">
-    <hr class="basis-10/12" />
-    <div class="basis-2/12"></div>
-  </div>
+<div class="not-prose sticky z-30 top-0 flex flex-col w-full mb-4 justify-center bg-default mst">
+	<!-- Header -->
+	<div class="basis-11/12 py-4">
+		<div class="flex w-full gap-6 lg:gap-12 justify-between items-center">
+			<div class="flex gap-2 items-center">
+				<ZineCommands />
+			</div>
+			<CommandSearch />
+			<CommandSettings />
+		</div>
+	</div>
+	<!-- Divider -->
+	<hr class="-mx-8 border-raise-25" />
 </div>

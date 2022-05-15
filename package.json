@@ -45,6 +45,7 @@
     "@lukeed/uuid": "^2.0.0",
     "cookie": "^0.4.1",
     "estimated-read-time": "^1.2.0",
-    "remark-github": "^11.2.2"
+    "remark-github": "^11.2.2",
+    "svelte-accessible-dialog": "^2.1.3"
   }
 }

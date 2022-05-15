@@ -1,9 +1,10 @@
 ---
-title: Navigation
 ---
 
 <script>
   import ZineNavigation from '$lib/zine/customization/zine-navigation.svelte';
 </script>
+
+### Navigation
 
 <ZineNavigation />

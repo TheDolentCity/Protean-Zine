@@ -1,4 +1,6 @@
 <script>
+  import Search24 from "carbon-icons-svelte/lib/Search24";
+
   export let name;
   export let value;
 
@@ -17,3 +19,10 @@
     <slot />
   </span>
 </label>
+
+<div class="flex">
+	<span>
+		<Search24 />
+	</span>
+	<input>
+</div>

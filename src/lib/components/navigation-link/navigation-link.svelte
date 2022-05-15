@@ -23,15 +23,15 @@
 
 	$: containerCss = () => {
 		return new CssBuilder()
-			.addClass('not-prose relative flex min-w-[14rem] justify-between bg-opacity-0 hover:raise-5')
-			.addClass('raise-5', link === $page?.url?.pathname)
+			.addClass('not-prose relative flex min-w-[14rem] px-4 justify-between bg-opacity-0 hover:raise-5')
+			.addClass('bg-raise-5', link === $page?.url?.pathname)
 			.build();
 	};
 
   $: anchorCss = () => {
 		return new CssBuilder()
-			.addClass('flex-auto py-2 leading-none whitespace-nowrap hover:text-focus hover:underline hover:decoration-2 hover:underline-offset-2 hover:decoration-primary-500')
-			.addClass('text-focus font-semibold before:content-[""] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-primary-600', link === $page?.url?.pathname)
+			.addClass('flex-auto py-2 leading-none whitespace-nowrap hover:text-focus hover:underline hover:decoration-2 hover:underline-offset-2 hover:decoration-primary-600 dark:hover:decoration-primary-400')
+			.addClass('text-focus font-semibold before:content-[""] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-primary-600 dark:before:bg-primary-400', link === $page?.url?.pathname)
 			.build();
 	};
 
