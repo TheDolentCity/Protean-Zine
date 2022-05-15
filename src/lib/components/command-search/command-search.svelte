@@ -1,8 +1,8 @@
 <script>
-  import { DialogOverlay, DialogContent } from 'svelte-accessible-dialog';
   import Dialog from '$lib/components/dialog/dialog.svelte';
+  import SearchBar from '$lib/components/search-bar/search-bar.svelte';
   import ZineNavigation from '$lib/zine/customization/zine-navigation.svelte';
-  import Search24 from "carbon-icons-svelte/lib/Search24";
+  import Search16 from "carbon-icons-svelte/lib/Search16";
 	
 	let isOpen;
   let initialFocusElement;
@@ -16,18 +16,18 @@
   };
 </script>
 
-<button on:click={open} class="flex-none flex min-w-[20rem] px-2 py-1 justify-between items-center rounded bg-raise-5">
+<button on:click={open} class="flex basis-6/12 gap-4 px-4 py-1 justify-between items-center rounded text-base bg-raise-5">
 	<span>
-		<Search24 />
+		<Search16 />
 	</span>
 	<span>
 		Search
 	</span>
 	<span class="invisible">
-		<Search24 />
+		<Search16 />
 	</span>
 </button>
 
 <Dialog {isOpen} {initialFocusElement} onDismiss={close}>
-	<ZineNavigation />
+	<SearchBar />
 </Dialog>

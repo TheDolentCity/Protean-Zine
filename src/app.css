@@ -24,7 +24,7 @@
     @apply bg-primary-600 dark:bg-primary-400 text-core-50 dark:text-core-900;
   }
   .chip {
-    @apply p-1 rounded font-mono font-semibold text-focus bg-core-200 dark:bg-core-700 mst;
+    @apply px-1 rounded text-focus bg-core-300 dark:bg-core-700 mst;
   }
   .focus-link {
     @apply font-medium text-primary-600 dark:text-primary-400 hover:underline hover:text-core-900 hover:decoration-core-900 dark:hover:text-core-100 dark:hover:decoration-core-100 mst;

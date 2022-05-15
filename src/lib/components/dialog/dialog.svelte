@@ -17,7 +17,7 @@
 </script>
 
 <DialogOverlay {isOpen} {initialFocusElement} onDismiss={onDismiss} class={overlayCss()}>
-  <DialogContent aria-label="Announcement" class="text-default bg-core-200 dark:bg-core-800">
+  <DialogContent aria-label="Announcement" class="!w-fit !p-0 rounded-lg text-default bg-core-200 dark:bg-core-800">
     <slot />
   </DialogContent>
 </DialogOverlay>

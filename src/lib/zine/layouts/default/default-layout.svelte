@@ -23,7 +23,7 @@
 
 <div class={$darkMode === Theme.Dark.name ? 'dark' : $darkMode === Theme.Light.name ? '' : 'dark'}>
 	<div class="flex flex-col w-screen max-w-screen h-screen max-h-screen justify-center text-default font-sans bg-default mst">
-		<div class="aspect-[1.41/1] h-full max-h-full scroll-y">
+		<div class="aspect-[1.41/1] h-full max-h-full px-8 scroll-y">
 			<ZineContent>
 				<ContentWarning />
 				<BlogHeader author={author} date={date} github={github} twitter={twitter} website={website} />
