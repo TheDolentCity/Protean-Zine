@@ -16,7 +16,7 @@
   };
 </script>
 
-<button on:click={open} class="flex basis-6/12 gap-4 px-4 py-1 justify-between items-center rounded text-base bg-raise-5">
+<button on:click={open} class="flex w-full xs:basis-6/12 gap-4 px-4 py-1 justify-between items-center rounded text-base bg-raise-5">
 	<span>
 		<Search16 />
 	</span>

@@ -9,11 +9,13 @@
 	<!-- Header -->
 	<div class="basis-11/12 py-4">
 		<div class="flex w-full gap-6 lg:gap-12 justify-between items-center">
-			<div class="flex gap-2 items-center">
+			<div class="hidden xs:flex gap-2 items-center">
 				<ZineCommands />
 			</div>
 			<CommandSearch />
-			<CommandSettings />
+			<span class="hidden xs:block">
+				<CommandSettings />
+			</span>
 		</div>
 	</div>
 	<!-- Divider -->

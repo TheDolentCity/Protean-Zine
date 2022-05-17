@@ -14,19 +14,22 @@ const config = {
     extend: {
       colors: {
         'core': {
-          '50': colors.stone['50'],
-          '100': colors.stone['100'],
-          '200': colors.stone['200'],
-          '300': colors.stone['300'],
-          '400': colors.stone['400'],
-          '500': colors.stone['500'],
-          '600': colors.stone['600'],
-          '700': colors.stone['700'],
-          '800': colors.stone['800'],
-          '900': colors.stone['900'],
+          '50': colors.zinc['50'],
+          '100': colors.zinc['100'],
+          '200': colors.zinc['200'],
+          '300': colors.zinc['300'],
+          '400': colors.zinc['400'],
+          '500': colors.zinc['500'],
+          '600': colors.zinc['600'],
+          '700': colors.zinc['700'],
+          '800': colors.zinc['800'],
+          '900': colors.zinc['900'],
         },
         'primary': colors.amber
-      }
+      },
+			screens: {
+				'xs': '320px'
+			}
     },
   },
   plugins: [
