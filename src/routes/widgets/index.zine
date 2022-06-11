@@ -1,7 +1,7 @@
 ---
-title: Components
+title: Widgets
 author: Dante Nardo
-date: Apr 2nd
+date: Jun 11th
 github: https://github.com/TheDolentCity/Protean-Zine
 twitter: https://twitter.com/nardogamedev
 website: https://svelte.dev/
@@ -12,29 +12,27 @@ website: https://svelte.dev/
   import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 </script>
 
-Components are the dynamic and rich media elements that Markdown lacks. A component can be a chart, form, or even 3D animated dice. They can make decisions about their data and react to state across a page or application.
+Widgets are the dynamic and rich media elements that Markdown lacks. A widget can be a chart, form, or even 3D animated dice. They can make decisions about their data and react to state across a page or application.
 
 
-## This is a Component
-
+## This is a Widget
 This page is a <ReadingTime />.
 
-## This is its Source
 
+## This is its Source
 ```markdown
 <script>
   import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';
 </script>
 
-## Here's a Component
+## Here's a Widget
 
 This page is a <ReadingTime />.
 ```
 
 
 ## Imports
-
-Components have to be imported manually in each file. Imports exist within a script element at the top of a page.
+Widgets have to be imported manually in each file. Imports exist within a script element at the top of a page.
 ```markdown
 <script>
   import ReadingTime from '$lib/widgets/reading-time/reading-time.svelte';

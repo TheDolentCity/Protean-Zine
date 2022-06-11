@@ -1,6 +1,7 @@
 <script>
 	import CommandSearch from '$lib/components/command-search/command-search.svelte';
   import CommandSettings from '$lib/components/command-settings/command-settings.svelte';
+	import NavigationBar from '$lib/components/navigation-bar/navigation-bar.svelte';
 	import ZineContent from '$lib/zine/customization/zine-content.svelte';
 	import ZineCommands from '$lib/zine/customization/zine-commands.svelte';
 </script>
@@ -19,5 +20,10 @@
 		</div>
 	</div>
 	<!-- Divider -->
-	<hr class="-mx-8 border-raise-25" />
+	<hr class="-mx-8 mb-3 border-raise-25" />
+
+	<NavigationBar previousPage="Home" chapterPage="Chapter" nextPage="Layouts" />
+
+	<!-- Divider -->
+	<hr class="-mx-8 mt-3 border-raise-25" />
 </div>

@@ -1,8 +1,12 @@
 <script>
   import NavigationLink from "$lib/components/navigation-link/navigation-link.svelte";
+	import config from "$lib/zine/customization/navigation.config.js";
+	import ZineRecursiveNavigation from "./zine-recursive-navigation.svelte";
 </script>
 
-<NavigationLink title="Home" link="/" />
+<ZineRecursiveNavigation nodes={config.tree} />
+
+<!-- <NavigationLink title="Home" link="/" />
 <NavigationLink title="Components" link="/components">
   <NavigationLink slot="subroutes" level={1} title="Reading Time" link="/components/reading-time"></NavigationLink>
 </NavigationLink>
@@ -30,3 +34,17 @@
     <NavigationLink level={1} title="Rehype" link="/extensibility/rehype"></NavigationLink>
   </svelte:fragment>
 </NavigationLink>
+
+{#each configObject.tree as node}
+	{#if node.children}
+		<NavigationLink title="Home" link="/">
+			<svelte:fragment slot="subroutes">
+				{#each node.children as child}
+					
+				{/each}
+			</svelte:fragment>
+		</NavigationLink>
+	{:else}
+		<NavigationLink title={node.title} link={node.link} />
+	{/if}
+{/each} -->

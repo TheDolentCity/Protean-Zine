@@ -2,6 +2,7 @@
 	import { darkMode } from "$lib/stores/dark-mode-store";
 	import { Theme } from "$lib/enums/theme";
 	import BlogHeader from "$lib/components/blog-header/blog-header.svelte";
+	import NavigationBar from "$lib/components/navigation-bar/navigation-bar.svelte";
 	import ContentWarning from "$lib/widgets/content-warning/content-warning.svelte";
 	import ZineContent from '$lib/zine/customization/zine-content.svelte';
 
@@ -25,8 +26,8 @@
 	<div class="flex flex-col w-screen max-w-screen h-screen max-h-screen justify-center text-default font-sans bg-default mst">
 		<div class="aspect-[1.41/1] h-full max-h-full px-8 scroll-y">
 			<ZineContent>
-				<ContentWarning />
 				<BlogHeader author={author} date={date} github={github} twitter={twitter} website={website} />
+				<ContentWarning />
 				
 				<!-- Page Title pulled from Frontmatter -->
 				{#if title}
