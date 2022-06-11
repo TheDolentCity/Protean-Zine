@@ -41,6 +41,9 @@
   .text-focus-invert {
     @apply text-core-50 dark:text-core-900;
   }
+	.text-primary {
+		@apply text-primary-600 dark:text-primary-400;
+	}
 	.border-default {
 		@apply border-core-300 dark:border-core-600;
 	}
@@ -52,6 +55,9 @@
 	}
 	.bg-invert {
 		@apply bg-core-900 dark:bg-core-100;
+	}
+	.bg-primary {
+		@apply bg-primary-600 dark:bg-primary-400;
 	}
   .bg-raise-5 {
     @apply bg-black bg-opacity-5 dark:bg-white dark:bg-opacity-5;

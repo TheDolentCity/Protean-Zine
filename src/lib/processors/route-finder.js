@@ -1,4 +1,4 @@
-import { toTitleCase } from '$lib/interfaces/prettify-string';
+import { toTitleCase } from '$lib/processors/prettify-string';
 
 export function getAllRoutes(modules) {
   let routes = [];
@@ -16,9 +16,6 @@ export function getAllRoutes(modules) {
     if (title.startsWith("__")) {
       continue;
     }
-    if (title === "Index") {
-      continue;
-    }
 
     // Create correct navigatable link
     let link = cleanRoute.includes("index") ? cleanRoute.replace("index", "") : cleanRoute;
@@ -28,7 +25,7 @@ export function getAllRoutes(modules) {
     }
 
     // Rename the site's index page
-    if (title === "index" && link == "/") {
+    if (title === "Index" && link == "/") {
       title = "Home";
     }
     
