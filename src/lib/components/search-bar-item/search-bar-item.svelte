@@ -15,12 +15,19 @@
 			.addClass('focus:bg-primary-600 dark:focus:bg-primary-400 focus:text-focus-invert')
 			.build();
 	};
+
+	$: iconCss = () => {
+		return new CssBuilder()
+			.addClass('p-1 rounded bg-raise-5')
+			.addClass('outline-1 outline-core-900 dark:outline-core-50', )
+			.build();
+	}
 </script>
 
 {#if link}
-	<a href={link} class={css()}>
+	<a sveltekit:prefetch href={link} class={css()}>
 		<div class="flex gap-2 items-center">
-			<span class="p-1 rounded bg-raise-5 group:hover:outline-core-500 group:focus:outline-core-500">
+			<span class="p-1 rounded bg-raise-5 group:hover:outline-core-500 group:hover:outline-1 group:hover:outline-core-900 dark:group:hover:outline-core-50">
 				<Hashtag16 />
 			</span>
 			<span>{title}</span>

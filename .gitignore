@@ -1,3 +1,8 @@
+# Netlify
+*.netlify
+/.netlify
+/.netlify/*
+
 # VS Code
 *.vscode
 /.vscode

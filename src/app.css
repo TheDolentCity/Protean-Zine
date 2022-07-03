@@ -94,7 +94,7 @@
     @apply border-black border-opacity-25 dark:border-white dark:border-opacity-25; 
   }
 	.scroll-y {
-		@apply overflow-y-auto scrollbar scrollbar-thumb-core-400 scrollbar-track-core-200 dark:scrollbar-thumb-core-600 dark:scrollbar-track-core-800;
+		@apply overflow-y-auto overscroll-none scrollbar scrollbar-thumb-core-400 scrollbar-track-core-200 dark:scrollbar-thumb-core-600 dark:scrollbar-track-core-800;
 	}
   .mst {
     @apply motion-safe:transition motion-safe:duration-200 motion-safe:ease-in-out;

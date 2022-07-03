@@ -29,5 +29,5 @@
 </button>
 
 <Dialog {isOpen} {initialFocusElement} onDismiss={close}>
-	<SearchBar />
+	<SearchBar dismissDialog={close} />
 </Dialog>
